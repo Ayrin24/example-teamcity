@@ -47,7 +47,6 @@ object Build : BuildType({
 
             conditions {
                 doesNotEqual("teamcity.build.branch", "master")
-                equals("teamcity.build.branch", "master")
             }
             goals = "clean test"
             userSettingsSelection = "settings.xml"
